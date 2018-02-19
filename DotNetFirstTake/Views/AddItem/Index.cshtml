@@ -1,0 +1,60 @@
+﻿@model Necklace
+
+<form asp-action="Index" method="post" class="form-horizontal" role="form">
+  
+  <div asp-validation-summary="All" class="text-danger"></div>
+  <div class="form-group margion-top">
+    <label asp-for="Name" class="col-md-2 control-label header"></label>
+    <div class="col-md-5">
+      <input asp-for="Name" class="form-control"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Description" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+      <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="ImageThumbnailUrl" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+      <textarea asp-for="ImageThumbnailUrl" class="form-control"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="ImageUrl" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+      <textarea asp-for="ImageUrl" class="form-control"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Price" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+      <input asp-for="Price" class="form-control"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="IsInStock" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+      <input type="checkbox" asp-for="IsInStock" class="form-control"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="IsNecklaceOfTheWeek" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+      <input type="checkbox" asp-for="IsNecklaceOfTheWeek" class="form-control"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-2">
+      <input type="submit" class="btn btn-primary" value="Add New Item"/>
+    </div>
+  </div>
+</form>

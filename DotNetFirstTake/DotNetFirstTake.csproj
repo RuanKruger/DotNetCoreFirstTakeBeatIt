@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180209104510_SecondTakeAtMigration.cs" />
+    <Compile Remove="Migrations\20180209104510_SecondTakeAtMigration.Designer.cs" />
+    <Compile Remove="Migrations\20180209104759_SecondTakeAtMigration.cs" />
+    <Compile Remove="Migrations\20180209104759_SecondTakeAtMigration.Designer.cs" />
+    <Compile Remove="Migrations\20180212105448_NecklaceModelTypeChanged.cs" />
+    <Compile Remove="Migrations\20180212105448_NecklaceModelTypeChanged.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+
+</Project>

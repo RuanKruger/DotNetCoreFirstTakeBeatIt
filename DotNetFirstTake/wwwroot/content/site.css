@@ -1,0 +1,21 @@
+﻿body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-image: url('/images/looping-abstract-color-background-pink-red-blue_suzyu0thd__F0000.png');
+  background-size: cover;
+}
+
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  color: white;
+}
+
+.margion-top {
+
+  margin-top: 10px;
+}
+
