@@ -8,22 +8,24 @@
   <link href="~/content/site.css" rel="stylesheet" />
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav id="mainNav" class="" onscroll="return myFunction();">
     <div class="container">
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a asp-controller="Home" asp-action="Index" class="navbar-brand">Bead It!</a></li>
-          <li><a asp-controller="Feedback" asp-action="Index">Feedback</a></li>
-          <li><a asp-controller="AddItem" asp-action="Index">Add New Item</a></li>
-          <li><a asp-controller="About" asp-action="Index">This About</a></li>
+          <li><a asp-controller="Home" asp-action="Index" class="navbar-brand logo">BeDazzled</a></li>
+          <li><a asp-controller="Home" asp-action="Index" class="logo">Home</a></li>
+          <li><a asp-controller="About" asp-action="Index" class="logo">This About</a></li>
+          <li><a asp-controller="Feedback" asp-action="Index" class="logo">ContactUs</a></li>
+          <li><a asp-controller="AddItem" asp-action="Index" class="logo">Add New Item</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container body-content">
-    <div class="row">
-      @RenderBody()
-    </div>
+<div class="container body-content">
+  <div class="row">
+    @RenderBody()
   </div>
+</div>
+<script type="text/javascript" src="~/js/main.js"></script>
 </body>
 </html>

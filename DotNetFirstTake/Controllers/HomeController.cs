@@ -27,7 +27,7 @@ namespace DotNetFirstTake.Controllers
 			var homeViewModel = new HomeViewModel()
 			{
 				
-				Title = "Welcome to BeadIT!",
+				Title = "Necklaces",
 				Necklaces = necklaces.ToList()
 			};
 
